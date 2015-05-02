@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using CodeQualityToolkit.Library;
+using CodeMeasureToolkit.Library;
 
-namespace CodeQualityToolkit.LinesOfCodeNamespace
+namespace CodeMeasureToolkit.LinesOfCodeNamespace
 {
     public static class FilesOfCode
     {

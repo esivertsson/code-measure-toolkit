@@ -1,4 +1,4 @@
-﻿using CodeQualityToolkit.Library;
+﻿using CodeMeasureToolkit.Library;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest

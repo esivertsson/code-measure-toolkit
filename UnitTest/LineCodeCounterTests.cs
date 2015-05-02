@@ -1,5 +1,5 @@
-﻿using CodeQualityToolkit.Library;
-using CodeQualityToolkit.LinesOfCodeNamespace;
+﻿using CodeMeasureToolkit.Library;
+using CodeMeasureToolkit.LinesOfCodeNamespace;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest

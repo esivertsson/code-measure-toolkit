@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CodeQualityToolkit.Library
+namespace CodeMeasureToolkit.Library
 {
     public static class Rules
     {

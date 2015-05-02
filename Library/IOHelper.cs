@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Security.AccessControl;
 
-namespace CodeQualityToolkit.Library
+namespace CodeMeasureToolkit.Library
 {
     public static class IOHelper
     {

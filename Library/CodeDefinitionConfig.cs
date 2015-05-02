@@ -2,7 +2,7 @@
 using System.IO;
 using Newtonsoft.Json;
 
-namespace CodeQualityToolkit.Library
+namespace CodeMeasureToolkit.Library
 {
     public class CodeDefinitionConfig
     {

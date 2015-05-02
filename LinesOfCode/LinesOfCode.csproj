@@ -7,7 +7,7 @@
     <ProjectGuid>{B5679700-C579-4B74-AE69-DE823628B3CD}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodeQualityToolkit.LinesOfCodeNamespace</RootNamespace>
+    <RootNamespace>CodeMeasureToolkit.LinesOfCodeNamespace</RootNamespace>
     <AssemblyName>loc</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

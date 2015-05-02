@@ -1,5 +1,5 @@
 ﻿
-namespace CodeQualityToolkit.Library
+namespace CodeMeasureToolkit.Library
 {
     public delegate void StringOutput(string argument);
 }

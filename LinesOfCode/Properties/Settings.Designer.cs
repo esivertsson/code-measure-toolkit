@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CodeQualityToolkit.LinesOfCodeNamespace.Properties {
+namespace CodeMeasureToolkit.LinesOfCodeNamespace.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

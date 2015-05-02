@@ -7,8 +7,8 @@
     <ProjectGuid>{69317F82-8FB5-4349-92E8-8EE3C6992D80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodeQualityToolkit.Library</RootNamespace>
-    <AssemblyName>CodeQualityToolkit.Library</AssemblyName>
+    <RootNamespace>CodeMeasureToolkit.Library</RootNamespace>
+    <AssemblyName>CodeMeasureToolkit.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

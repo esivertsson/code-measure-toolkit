@@ -1,6 +1,6 @@
-﻿using CodeQualityToolkit.Library;
+﻿using CodeMeasureToolkit.Library;
 
-namespace CodeQualityToolkit.LinesOfCodeNamespace
+namespace CodeMeasureToolkit.LinesOfCodeNamespace
 {
     /// <summary>
     /// Responsible for counting lines of code in a string and producing output.

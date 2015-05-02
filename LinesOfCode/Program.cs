@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
-using CodeQualityToolkit.Library;
+using CodeMeasureToolkit.Library;
 
-namespace CodeQualityToolkit.LinesOfCodeNamespace
+namespace CodeMeasureToolkit.LinesOfCodeNamespace
 {
     internal class Program
     {

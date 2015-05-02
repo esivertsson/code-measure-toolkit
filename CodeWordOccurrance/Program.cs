@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CodeQualityToolkit.Library;
-using CodeQualityToolkit.LinesOfCodeNamespace;
+using CodeMeasureToolkit.Library;
+using CodeMeasureToolkit.LinesOfCodeNamespace;
 using CodeWordOccurrance;
 
-namespace CodeQualityToolkit.CodeWordOccurrance
+namespace CodeMeasureToolkit.CodeWordOccurrance
 {
     internal class Program
     {
