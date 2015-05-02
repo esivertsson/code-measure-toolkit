@@ -1,4 +1,5 @@
-﻿using CodeQualityToolkit.LinesOfCodeNamespace;
+﻿using CodeQualityToolkit.Library;
+using CodeQualityToolkit.LinesOfCodeNamespace;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest
@@ -7,8 +8,11 @@ namespace UnitTest
     public class LineCounterTest
     {
         [TestMethod]
+        [DeploymentItem("codeDefinition.json")]
         public void ExcludeLinesThatOnlyContainBrackets()
         {
+            RulesReader.FromFile("codeDefinition.json");
+
             Assert.IsFalse(LinesOfCode.DoCount("	}"));
             Assert.IsFalse(LinesOfCode.DoCount("{"));
             Assert.IsFalse(LinesOfCode.DoCount("{}"));
@@ -17,8 +21,11 @@ namespace UnitTest
         }
 
         [TestMethod]
+        [DeploymentItem("codeDefinition.json")]
         public void ExcludeLinesWithComments()
         {
+            RulesReader.FromFile("codeDefinition.json");
+
             Assert.IsFalse(LinesOfCode.DoCount("//"));
             Assert.IsFalse(LinesOfCode.DoCount("   //"));
             Assert.IsFalse(LinesOfCode.DoCount("///"));
@@ -32,8 +39,10 @@ namespace UnitTest
         }
 
         [TestMethod]
+        [DeploymentItem("codeDefinition.json")]
         public void CountOneLine()
         {
+            RulesReader.FromFile("codeDefinition.json");
             Assert.IsTrue(LinesOfCode.DoCount("i=0;\n"));
         }
     }

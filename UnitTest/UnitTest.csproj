@@ -38,7 +38,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -59,6 +63,7 @@
     <Compile Include="LineCodeCounterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FileCodeCounterTests.cs" />
+    <Compile Include="RuleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Library\Library.csproj">
@@ -71,27 +76,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\LinesOfCode\codeLineMustContain.config">
-      <Link>codeLineMustContain.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\filesMustMatch.config">
-      <Link>filesMustMatch.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\ignoreFilesThatMatch.config">
-      <Link>ignoreFilesThatMatch.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\ignoreFoldersThatMatch.config">
-      <Link>ignoreFoldersThatMatch.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\ignoreIfLineContainsOnly.config">
-      <Link>ignoreIfLineContainsOnly.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\ignoreLinesThatStartWith.config">
-      <Link>ignoreLinesThatStartWith.config</Link>
-    </None>
-    <None Include="..\LinesOfCode\ignoreLineThatContains.config">
-      <Link>ignoreLineThatContains.config</Link>
-    </None>
+    <Content Include="codeDefinition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="empty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

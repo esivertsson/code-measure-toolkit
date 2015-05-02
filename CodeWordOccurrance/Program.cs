@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using CodeQualityToolkit.Library;
 using CodeQualityToolkit.LinesOfCodeNamespace;
+using CodeWordOccurrance;
 
 namespace CodeQualityToolkit.CodeWordOccurrance
 {
@@ -25,13 +26,17 @@ namespace CodeQualityToolkit.CodeWordOccurrance
             }
 
             string directory = args[0];
+
+            RulesReader.FromFile("codeDefinition.json");
+            ExcludeWordsConfig excludeWordsConfig = ExcludeWordsConfig.FromJsonFile("excludeWords.json");
+
             LinesOfCode.LineProcessComplete += LinesOfCode_LineProcessComplete;
             FilesOfCode.FileFound += (f) => LinesOfCode.CountLinesOfCodeInFile(f);
             FilesOfCode.Find(directory);
 
             foreach (KeyValuePair<string, int> k in _occurrances
                 .Where(kvp => kvp.Value > THRESHOLD)
-                .Where(kvp => !Rules.ExcludeWords.Contains(kvp.Key))
+                .Where(kvp => !excludeWordsConfig.ExcludeWords.Contains(kvp.Key))
                 .OrderByDescending(kvp => { return kvp.Value; }))
             {
                 Console.WriteLine(k.Value + ":\t" + k.Key);

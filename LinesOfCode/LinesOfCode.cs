@@ -56,7 +56,7 @@ namespace CodeQualityToolkit.LinesOfCodeNamespace
                 }
             }
 
-            foreach (string cannotContain in Rules.IgnoreLineThatContains)
+            foreach (string cannotContain in Rules.IgnoreLinesThatContains)
             {
                 if (codeLine.Contains(cannotContain))
                 {

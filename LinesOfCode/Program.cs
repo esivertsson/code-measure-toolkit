@@ -34,6 +34,8 @@ namespace CodeQualityToolkit.LinesOfCodeNamespace
                 return 0;
             }
 
+            RulesReader.FromFile("codeDefinition.json");
+
             if (args.Length > 1)
             {
                 string lastArgument = args[args.Length - 1];
