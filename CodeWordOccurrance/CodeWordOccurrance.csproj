@@ -70,9 +70,6 @@
     <Content Include="codeDefinition.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="excludeWords.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <Content Include="excludeWords.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
