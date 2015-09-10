@@ -1,0 +1,40 @@
+﻿{
+    "filesMustMatch": [
+        "*.cs"
+    ],
+    "codeLineMustContain": [
+
+    ],
+    "ignoreFilesThatMatch": [
+        "*.designer.cs",
+        "TemporaryGeneratedFile*.cs",
+        "AssemblyInfo.cs"
+    ],
+    "ignoreFoldersThatMatch": [
+        "bin",
+        "obj",
+        "Properties"
+    ],
+    "ignoreIfLineContainsOnly": [
+        "{",
+        "}",
+        "{}",
+        "}{",
+        "};",
+        "});",
+        "get {",
+        "set {"
+    ],
+    "ignoreLinesThatStartWith": [
+        "//",
+        "#",
+        "[",
+        "using",
+        "namespace",
+        "///"
+    ],
+    "ignoreLinesThatContains": [
+        "interface",
+        "class"
+    ]
+}
